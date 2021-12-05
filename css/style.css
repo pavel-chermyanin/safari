@@ -487,13 +487,128 @@ a {
 .menu__btn {
   display: none;
 }
+@media (max-width: 1150px) {
+  .about__inner {
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+  }
+  .gallery__item-inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+  .gallery__item-img {
+    width: 100%;
+  }
+}
 
+@media (max-width: 1140px) {
+  .photo__inner {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .photo__img {
+    width: 100%;
+  }
+  .travel-info__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tour__info {
+    grid-gap: 30px 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 990px) {
+  .popular__items {
+    grid-gap: 10px;
+  }
+  .popular__link {
+    min-height: 200px;
+  }
+}
+@media (max-width: 820px){
+  .booking{
+    padding: 50px 0;
+  }
+  .booking__input{
+    width: 100%;
+  }
+  .booking__label{
+    width: 100%;
+    margin-left: 50px;
+    margin-top: -192px;
+  }
+}
 @media (max-width: 800px) {
   .header__phone span {
     display: none;
   }
+  .popular__link:nth-child(3),
+  .popular__link:nth-child(6) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .popular__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .popular__link {
+    min-height: 320px;
+  }
+  .popular {
+    padding: 50px 0;
+  }
+  .map {
+    padding-bottom: 50px;
+  }
+  .map__iframe {
+    height: 400px;
+  }
+  .about__inner {
+    grid-template-columns: 1fr;
+  }
+  .about__popup {
+    min-height: 300px;
+  }
+  .gallery {
+    padding-bottom: 50px;
+  }
+  .tour {
+    padding: 50px 0;
+  }
+  .tour__box {
+    column-count: 1;
+  }
+  .tour__title {
+    margin-bottom: 30px;
+  }
+  .tour__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer{
+    padding: 50px 0;
+  }
+  .footer__logo{
+    margin-bottom: 40px;
+  }
+  .footer__box{
+    display: block;
+    text-align: center;
+  }
+  .footer__info,
+  .footer__address{
+    margin: 0 auto 25px;
+  }
+  .footer__contacts{
+    margin: 0 auto;
+  }
 }
 @media (max-width: 560px) {
+  .title {
+    font-size: 28px;
+    line-height: 91%;
+  }
+  .header {
+    margin-bottom: 50px;
+  }
   .header__title {
     font-size: 50px;
     line-height: 60px;
@@ -542,7 +657,7 @@ a {
     right: 0;
   }
 
-  .menu__list.menu__list--active{
+  .menu__list.menu__list--active {
     transform: translateY(0);
   }
   .menu__link {
@@ -566,7 +681,55 @@ a {
   .menu {
     border: none;
   }
-  .header__btn{
+  .header__btn {
     margin-bottom: 10px;
+  }
+  .photo {
+    margin-bottom: 50px;
+  }
+  .photo__inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .travel-info__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .popular {
+    padding: 50px 0;
+  }
+  .popular__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .map__iframe {
+    height: 300px;
+  }
+  .gallery__item-inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery__title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .gallery__top {
+    flex-wrap: wrap;
+  }
+  .tour__info-item{
+    font-size: 46px;
+  }
+}
+@media (max-width: 460px) {
+  .title {
+    font-size: 24px;
+  }
+  .travel-info__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .photo__inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tour__info {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
